@@ -1,0 +1,25 @@
+<div class="row">
+  <div style="background: #f6f4f4" class="list-group-item clearfix">
+    <div class="pull-left">
+      <h4 style="font-size: 29px" class="list-group-item-heading">Contacts</h4>
+    </div>
+    <div class="pull-right">
+      <button class="btn btn-success">New Contact</button>
+    </div>
+  </div>
+
+  <div class="list-group-item clearfix">
+    <div class="list-group-item clearfix" *ngFor="let cont of contacts">
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">{{cont.name}}</h4>
+      </div>
+      <span class="pull-right">
+        <img
+          src="{{cont.imageUrl}}"
+          alt="{{cont.name}}"
+          class="img-responsive"
+          style="max-height: 50px;">
+      </span>
+    </div>
+  </div>
+</div>
