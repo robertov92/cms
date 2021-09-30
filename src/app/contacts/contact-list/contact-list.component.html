@@ -7,19 +7,9 @@
       <button class="btn btn-success">New Contact</button>
     </div>
   </div>
-
   <div class="list-group-item clearfix">
-    <div class="list-group-item clearfix" *ngFor="let cont of contacts">
-      <div class="pull-left">
-        <h4 class="list-group-item-heading">{{cont.name}}</h4>
-      </div>
-      <span class="pull-right">
-        <img
-          src="{{cont.imageUrl}}"
-          alt="{{cont.name}}"
-          class="img-responsive"
-          style="max-height: 50px;">
-      </span>
-    </div>
+    <!--for cont in contacts[] create the contact @Input variable-->
+    <cms-contact-item *ngFor="let cont of contacts"
+    [contact]="cont"></cms-contact-item>
   </div>
 </div>
