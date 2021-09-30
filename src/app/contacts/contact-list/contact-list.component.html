@@ -9,7 +9,10 @@
   </div>
   <div class="list-group-item clearfix">
     <!--for cont in contacts[] create the contact @Input variable-->
-    <cms-contact-item *ngFor="let cont of contacts"
-    [contact]="cont"></cms-contact-item>
+    <!--contactSelectedItem is an output from contact item-->
+    <cms-contact-item
+      *ngFor="let cont of contacts" [contact]="cont"
+      (selectedContactEventItem)="onSelected(cont)"
+    ></cms-contact-item>
   </div>
 </div>
