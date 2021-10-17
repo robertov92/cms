@@ -119,6 +119,14 @@ export const MOCKCONTACTS: Contact[] = [
     imageUrl: '../../assets/images/thompsonda.jpg',
     group: null
   },
+  {
+    id: '100',
+    name: 'Roberto Villanueva',
+    email: 'roberto@byui.edu',
+    phone: '208-496-3734',
+    imageUrl: '../../assets/images/yo.png',
+    group: null
+  },
 
   // teams
   // index 13
