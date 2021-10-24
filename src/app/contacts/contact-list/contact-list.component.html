@@ -4,15 +4,12 @@
       <h4 style="font-size: 29px" class="list-group-item-heading">Contacts</h4>
     </div>
     <div class="pull-right">
-      <button class="btn btn-success">New Contact</button>
+      <button [routerLink]="['new']" class="btn btn-success">New Contact</button>
     </div>
   </div>
   <div class="list-group-item clearfix">
-    <!--for cont in contacts[] create the contact @Input variable-->
-    <!--contactSelectedItem is an output from contact item-->
     <cms-contact-item
       *ngFor="let cont of contacts" [contact]="cont"
-      (selectedContactEventItem)="onSelected(cont)"
     ></cms-contact-item>
   </div>
 </div>
